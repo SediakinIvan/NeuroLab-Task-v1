@@ -1,0 +1,100 @@
+seed: 42
+
+paths:
+  input_dataset: "Students Social Media Addiction.csv"
+  data_raw_dir: "data/raw"
+  data_interim_dir: "data/interim"
+  data_processed_dir: "data/processed"
+  artifacts_reports_dir: "artifacts/reports"
+  artifacts_plots_dir: "artifacts/plots"
+  artifacts_models_dir: "artifacts/models"
+  artifacts_logs_dir: "artifacts/logs"
+
+columns:
+  id_column: "Student_ID"
+  manual_numeric: []
+  manual_categorical: []
+  manual_text:
+    - "Free_Time_Activity"
+    - "Social_Media_Impact"
+  text_min_avg_length: 25
+  text_min_max_length: 60
+
+split:
+  merge_text_columns: true
+  merged_text_column_name: "combined_text"
+  merge_separator: " || "
+
+text_processing:
+  enabled: true
+  source_column: "combined_text"
+  lowercase: true
+  remove_punctuation: true
+  normalize_whitespace: true
+  stemming_mode: "none" # none | light_ru
+  min_russian_char_ratio: 0.35
+
+embeddings:
+  enabled: true
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  batch_size: 32
+  normalize_embeddings: true
+  show_progress_bar: true
+  checkpoint_every: 50
+
+clustering:
+  enabled: true
+  algorithm: "kmeans" # kmeans | hdbscan
+  random_state: 42
+  kmeans:
+    min_k: 2
+    max_k: 12
+    n_init: 10
+  hdbscan:
+    min_cluster_size: 10
+    min_samples: null
+  tiny_cluster_threshold: 5
+  min_silhouette_score: 0.05
+
+sentiment:
+  enabled: false
+
+gigachat:
+  enabled: true
+  base_url: "https://gigachat.devices.sberbank.ru"
+  oauth_base_url: "https://ngw.devices.sberbank.ru:9443"
+  oauth_endpoint: "/api/v2/oauth"
+  chat_endpoint: "/api/v1/chat/completions"
+  scope: "GIGACHAT_API_PERS"
+  use_oauth: true
+  verify_ssl: false
+  model: "GigaChat-Pro"
+  model_fallbacks:
+    - "GigaChat"
+    - "GigaChat-Lite"
+  api_key: ""
+  api_key_env_var: "GIGACHAT_API_KEY"
+  timeout_seconds: 60
+  max_retries: 3
+  backoff_seconds: 1.5
+  temperature: 0.2
+  safe_logging: true
+  log_raw_text: false
+
+cluster_interpretation:
+  enabled: true
+  min_texts_per_cluster: 3
+  sample_texts_per_cluster: 5
+  max_text_length: 220
+  prompt_language: "ru"
+
+merge_analysis:
+  enabled: true
+  alpha: 0.05
+  min_group_size: 3
+
+final_report:
+  enabled: true
+  language: "ru"
+  max_key_findings: 10
+  include_methodology: true

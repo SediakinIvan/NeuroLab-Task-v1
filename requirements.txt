@@ -1,0 +1,11 @@
+pandas
+numpy
+pyyaml
+pyarrow
+matplotlib
+sentence-transformers
+tqdm
+hdbscan
+httpx
+jsonschema
+python-dotenv
