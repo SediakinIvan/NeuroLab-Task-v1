@@ -1,0 +1,32 @@
+{
+  "rows": 200,
+  "columns": 15,
+  "id_column": "Student_ID",
+  "duplicate_rows": 0,
+  "duplicate_ids": 0,
+  "null_ratio": {
+    "Student_ID": 0.0,
+    "Age": 0.0,
+    "Gender": 0.0,
+    "Academic_Level": 0.0,
+    "Country": 0.0,
+    "Avg_Daily_Usage_Hours": 0.0,
+    "Most_Used_Platform": 0.0,
+    "Affects_Academic_Performance": 0.0,
+    "Sleep_Hours_Per_Night": 0.0,
+    "Mental_Health_Score": 0.0,
+    "Relationship_Status": 0.0,
+    "Conflicts_Over_Social_Media": 0.0,
+    "Addicted_Score": 0.0,
+    "Free_Time_Activity": 0.0,
+    "Social_Media_Impact": 0.0
+  },
+  "impossible_negative_values": {
+    "Addicted_Score": 0,
+    "Age": 0,
+    "Avg_Daily_Usage_Hours": 0,
+    "Conflicts_Over_Social_Media": 0,
+    "Mental_Health_Score": 0,
+    "Sleep_Hours_Per_Night": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-03-16T14:06:05.069263+00:00",
+  "profile": "full",
+  "config_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\configs\\default.yaml",
+  "config_hash_sha256": "4dbad2622f0e67443f2362a8ab9ebf4525a4354b469f0fb9378b4ba5b18331e9",
+  "success": true,
+  "runtime_seconds": 107.537,
+  "error": null,
+  "summary": {
+    "input_rows": 200,
+    "input_columns": 15,
+    "id_column": "Student_ID",
+    "structured_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\data\\interim\\structured.parquet",
+    "text_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\data\\interim\\text.parquet",
+    "validation_report_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\data_validation.json",
+    "column_types_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\column_types.json",
+    "eda_summary_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\eda_summary.json",
+    "outlier_flags_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\outlier_flags.parquet",
+    "text_preprocessing_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\text_preprocessing.json",
+    "embedding_meta_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\embedding_meta.json",
+    "embeddings_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\models\\text_embeddings.npy",
+    "text_clusters_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\text_clusters.json",
+    "cluster_interpretations_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\cluster_interpretations.json",
+    "final_dataset_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\data\\processed\\final_dataset.parquet",
+    "cluster_correlations_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\cluster_correlations.json",
+    "final_report_json_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\final_report.json",
+    "final_report_markdown_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\final_report.md",
+    "final_report_context_path": "C:\\Users\\iseda\\Cursor\\NeuroLab Test Task\\artifacts\\reports\\final_report_context.json"
+  }
+}

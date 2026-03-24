@@ -1,0 +1,23 @@
+{
+  "id_column": "Student_ID",
+  "numeric": [
+    "Addicted_Score",
+    "Age",
+    "Avg_Daily_Usage_Hours",
+    "Conflicts_Over_Social_Media",
+    "Mental_Health_Score",
+    "Sleep_Hours_Per_Night"
+  ],
+  "categorical": [
+    "Academic_Level",
+    "Affects_Academic_Performance",
+    "Country",
+    "Gender",
+    "Most_Used_Platform",
+    "Relationship_Status"
+  ],
+  "text": [
+    "Free_Time_Activity",
+    "Social_Media_Impact"
+  ]
+}

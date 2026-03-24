@@ -1,0 +1,259 @@
+{
+  "dataset_overview": {
+    "rows": 200,
+    "columns": 15,
+    "duplicate_rows": 0,
+    "duplicate_ids": 0
+  },
+  "eda_overview": {
+    "numeric_columns": [
+      "Addicted_Score",
+      "Age",
+      "Avg_Daily_Usage_Hours",
+      "Conflicts_Over_Social_Media",
+      "Mental_Health_Score",
+      "Sleep_Hours_Per_Night"
+    ],
+    "categorical_columns": [
+      "Academic_Level",
+      "Affects_Academic_Performance",
+      "Country",
+      "Gender",
+      "Most_Used_Platform",
+      "Relationship_Status"
+    ],
+    "outlier_summary": {
+      "Addicted_Score": {
+        "iqr_outlier_count": 0,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 0,
+        "iqr_bounds": {
+          "lower": 0.5,
+          "upper": 12.5
+        },
+        "median": 7.0,
+        "mad": 1.0
+      },
+      "Age": {
+        "iqr_outlier_count": 0,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 0,
+        "iqr_bounds": {
+          "lower": 16.0,
+          "upper": 24.0
+        },
+        "median": 20.0,
+        "mad": 1.0
+      },
+      "Avg_Daily_Usage_Hours": {
+        "iqr_outlier_count": 1,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 1,
+        "iqr_bounds": {
+          "lower": 1.8999999999999995,
+          "upper": 7.500000000000001
+        },
+        "median": 4.8,
+        "mad": 0.6500000000000004
+      },
+      "Conflicts_Over_Social_Media": {
+        "iqr_outlier_count": 0,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 0,
+        "iqr_bounds": {
+          "lower": -1.0,
+          "upper": 7.0
+        },
+        "median": 3.0,
+        "mad": 1.0
+      },
+      "Mental_Health_Score": {
+        "iqr_outlier_count": 0,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 0,
+        "iqr_bounds": {
+          "lower": 2.0,
+          "upper": 10.0
+        },
+        "median": 6.0,
+        "mad": 1.0
+      },
+      "Sleep_Hours_Per_Night": {
+        "iqr_outlier_count": 0,
+        "robust_z_outlier_count": 0,
+        "combined_outlier_count": 0,
+        "iqr_bounds": {
+          "lower": 3.199999999999999,
+          "upper": 9.600000000000001
+        },
+        "median": 6.3,
+        "mad": 0.7999999999999998
+      }
+    }
+  },
+  "cluster_overview": {
+    "n_rows": 200,
+    "n_clusters_including_noise": 12,
+    "silhouette_score": 0.2717440724372864,
+    "davies_bouldin_score": 1.5933993977808028,
+    "cluster_counts": {
+      "0": 17,
+      "1": 9,
+      "2": 14,
+      "3": 32,
+      "4": 6,
+      "5": 19,
+      "6": 6,
+      "7": 22,
+      "8": 30,
+      "9": 12,
+      "10": 14,
+      "11": 19
+    },
+    "quality_status": "ok",
+    "interpreted_clusters": 12
+  },
+  "top_categorical_associations": [
+    {
+      "feature": "Gender",
+      "test": "chi2_contingency",
+      "chi2_statistic": 140.081223893066,
+      "p_value": 1.5680701165178037e-24,
+      "degrees_of_freedom": 11,
+      "cramers_v": 0.836902694143907,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 2
+    },
+    {
+      "feature": "Country",
+      "test": "chi2_contingency",
+      "chi2_statistic": 1521.5377269504763,
+      "p_value": 5.734033018069489e-10,
+      "degrees_of_freedom": 1199,
+      "cramers_v": 0.8316297599922468,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 110
+    },
+    {
+      "feature": "Affects_Academic_Performance",
+      "test": "chi2_contingency",
+      "chi2_statistic": 127.00502210866597,
+      "p_value": 7.019252956953004e-22,
+      "degrees_of_freedom": 11,
+      "cramers_v": 0.7968846281258849,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 2
+    },
+    {
+      "feature": "Most_Used_Platform",
+      "test": "chi2_contingency",
+      "chi2_statistic": 594.710565516846,
+      "p_value": 4.3066849078264904e-86,
+      "degrees_of_freedom": 66,
+      "cramers_v": 0.7039830523036084,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 7
+    },
+    {
+      "feature": "Academic_Level",
+      "test": "chi2_contingency",
+      "chi2_statistic": 119.02426483697765,
+      "p_value": 2.6224468881802233e-15,
+      "degrees_of_freedom": 22,
+      "cramers_v": 0.5454912117462977,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 3
+    },
+    {
+      "feature": "Relationship_Status",
+      "test": "chi2_contingency",
+      "chi2_statistic": 36.069520620340356,
+      "p_value": 0.029849373271997204,
+      "degrees_of_freedom": 22,
+      "cramers_v": 0.3002895295391614,
+      "is_significant": true,
+      "cluster_levels": 12,
+      "feature_levels": 3
+    }
+  ],
+  "top_numeric_comparisons": [
+    {
+      "feature": "Addicted_Score",
+      "anova_f_statistic": 34.36745383744909,
+      "anova_p_value": 2.7597916301904753e-39,
+      "kruskal_h_statistic": 119.62643189739381,
+      "kruskal_p_value": 2.1554316963697647e-20,
+      "eta_squared": 0.6678691641492064,
+      "epsilon_squared": 0.5778001696669883,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    },
+    {
+      "feature": "Avg_Daily_Usage_Hours",
+      "anova_f_statistic": 33.4208624535166,
+      "anova_p_value": 1.5164482321746601e-38,
+      "kruskal_h_statistic": 111.12758630268647,
+      "kruskal_p_value": 1.0904803397253911e-18,
+      "eta_squared": 0.6616450271224908,
+      "epsilon_squared": 0.5325935441632259,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    },
+    {
+      "feature": "Mental_Health_Score",
+      "anova_f_statistic": 30.482606023426214,
+      "anova_p_value": 3.678792406028408e-36,
+      "kruskal_h_statistic": 118.2528060004644,
+      "kruskal_p_value": 4.0704093466385934e-20,
+      "eta_squared": 0.6407473980042498,
+      "epsilon_squared": 0.5704936489386404,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    },
+    {
+      "feature": "Conflicts_Over_Social_Media",
+      "anova_f_statistic": 28.84510636302777,
+      "anova_p_value": 9.053866397065381e-35,
+      "kruskal_h_statistic": 118.10264508046313,
+      "kruskal_p_value": 4.363205511150063e-20,
+      "eta_squared": 0.6279409756806771,
+      "epsilon_squared": 0.5696949206407613,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    },
+    {
+      "feature": "Age",
+      "anova_f_statistic": 20.520840393256112,
+      "anova_p_value": 7.065707552799338e-27,
+      "kruskal_h_statistic": 96.8547183622207,
+      "kruskal_p_value": 7.476666893489357e-16,
+      "eta_squared": 0.5455965403017348,
+      "epsilon_squared": 0.45667403384159944,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    },
+    {
+      "feature": "Sleep_Hours_Per_Night",
+      "anova_f_statistic": 19.829411628695574,
+      "anova_p_value": 3.7713940652136296e-26,
+      "kruskal_h_statistic": 108.03390701785074,
+      "kruskal_p_value": 4.521436645316503e-18,
+      "eta_squared": 0.5370866569467841,
+      "epsilon_squared": 0.5161378032864401,
+      "anova_significant": true,
+      "kruskal_significant": true,
+      "groups_used": 12
+    }
+  ],
+  "language": "ru"
+}

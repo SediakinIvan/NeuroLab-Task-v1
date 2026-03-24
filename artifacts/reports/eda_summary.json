@@ -1,0 +1,191 @@
+{
+  "numeric_columns": [
+    "Addicted_Score",
+    "Age",
+    "Avg_Daily_Usage_Hours",
+    "Conflicts_Over_Social_Media",
+    "Mental_Health_Score",
+    "Sleep_Hours_Per_Night"
+  ],
+  "categorical_columns": [
+    "Academic_Level",
+    "Affects_Academic_Performance",
+    "Country",
+    "Gender",
+    "Most_Used_Platform",
+    "Relationship_Status"
+  ],
+  "missing_ratio": {
+    "Student_ID": 0.0,
+    "Addicted_Score": 0.0,
+    "Age": 0.0,
+    "Avg_Daily_Usage_Hours": 0.0,
+    "Conflicts_Over_Social_Media": 0.0,
+    "Mental_Health_Score": 0.0,
+    "Sleep_Hours_Per_Night": 0.0,
+    "Academic_Level": 0.0,
+    "Affects_Academic_Performance": 0.0,
+    "Country": 0.0,
+    "Gender": 0.0,
+    "Most_Used_Platform": 0.0,
+    "Relationship_Status": 0.0
+  },
+  "numeric_stats": {
+    "Addicted_Score": {
+      "mean": 6.575,
+      "std": 1.5415,
+      "min": 2.0,
+      "max": 9.0
+    },
+    "Age": {
+      "mean": 20.395,
+      "std": 1.4315,
+      "min": 18.0,
+      "max": 24.0
+    },
+    "Avg_Daily_Usage_Hours": {
+      "mean": 4.5905,
+      "std": 1.0574,
+      "min": 1.5,
+      "max": 7.2
+    },
+    "Conflicts_Over_Social_Media": {
+      "mean": 2.77,
+      "std": 1.0923,
+      "min": 0.0,
+      "max": 5.0
+    },
+    "Mental_Health_Score": {
+      "mean": 6.175,
+      "std": 1.0771,
+      "min": 4.0,
+      "max": 9.0
+    },
+    "Sleep_Hours_Per_Night": {
+      "mean": 6.3695,
+      "std": 0.9388,
+      "min": 4.5,
+      "max": 8.6
+    }
+  },
+  "categorical_top_values": {
+    "Academic_Level": {
+      "Undergraduate": 100,
+      "Graduate": 73,
+      "High School": 27
+    },
+    "Affects_Academic_Performance": {
+      "Yes": 127,
+      "No": 73
+    },
+    "Country": {
+      "Bangladesh": 17,
+      "India": 17,
+      "Pakistan": 16,
+      "Nepal": 16,
+      "Sri Lanka": 15,
+      "Maldives": 15,
+      "USA": 1,
+      "UK": 1,
+      "Canada": 1,
+      "Australia": 1
+    },
+    "Gender": {
+      "Female": 100,
+      "Male": 100
+    },
+    "Most_Used_Platform": {
+      "Instagram": 65,
+      "TikTok": 51,
+      "Facebook": 39,
+      "LinkedIn": 21,
+      "Snapchat": 13,
+      "YouTube": 10,
+      "Twitter": 1
+    },
+    "Relationship_Status": {
+      "Single": 88,
+      "In Relationship": 80,
+      "Complicated": 32
+    }
+  },
+  "outlier_summary": {
+    "Addicted_Score": {
+      "iqr_outlier_count": 0,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 0,
+      "iqr_bounds": {
+        "lower": 0.5,
+        "upper": 12.5
+      },
+      "median": 7.0,
+      "mad": 1.0
+    },
+    "Age": {
+      "iqr_outlier_count": 0,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 0,
+      "iqr_bounds": {
+        "lower": 16.0,
+        "upper": 24.0
+      },
+      "median": 20.0,
+      "mad": 1.0
+    },
+    "Avg_Daily_Usage_Hours": {
+      "iqr_outlier_count": 1,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 1,
+      "iqr_bounds": {
+        "lower": 1.8999999999999995,
+        "upper": 7.500000000000001
+      },
+      "median": 4.8,
+      "mad": 0.6500000000000004
+    },
+    "Conflicts_Over_Social_Media": {
+      "iqr_outlier_count": 0,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 0,
+      "iqr_bounds": {
+        "lower": -1.0,
+        "upper": 7.0
+      },
+      "median": 3.0,
+      "mad": 1.0
+    },
+    "Mental_Health_Score": {
+      "iqr_outlier_count": 0,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 0,
+      "iqr_bounds": {
+        "lower": 2.0,
+        "upper": 10.0
+      },
+      "median": 6.0,
+      "mad": 1.0
+    },
+    "Sleep_Hours_Per_Night": {
+      "iqr_outlier_count": 0,
+      "robust_z_outlier_count": 0,
+      "combined_outlier_count": 0,
+      "iqr_bounds": {
+        "lower": 3.199999999999999,
+        "upper": 9.600000000000001
+      },
+      "median": 6.3,
+      "mad": 0.7999999999999998
+    }
+  },
+  "generated_plots": [
+    "numeric_distributions.png",
+    "missingness_heatmap.png",
+    "correlation_heatmap.png",
+    "categorical_frequencies_academic_level.png",
+    "categorical_frequencies_affects_academic_performance.png",
+    "categorical_frequencies_country.png",
+    "categorical_frequencies_gender.png",
+    "categorical_frequencies_most_used_platform.png",
+    "categorical_frequencies_relationship_status.png"
+  ]
+}

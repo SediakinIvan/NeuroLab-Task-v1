@@ -1,0 +1,9 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "rows_embedded": 200,
+  "embedding_dimension": 384,
+  "batch_size": 32,
+  "normalize_embeddings": true,
+  "checkpoint_every": 50,
+  "source_text_column": "text_cleaned"
+}

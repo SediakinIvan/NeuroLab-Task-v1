@@ -1,0 +1,9 @@
+{
+  "rows_total": 200,
+  "source_column": "combined_text",
+  "non_empty_cleaned_rows": 200,
+  "russian_rows": 200,
+  "non_russian_rows": 0,
+  "mean_ru_char_ratio": 0.9135730497361643,
+  "stemming_mode": "none"
+}
